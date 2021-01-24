@@ -1,0 +1,8 @@
+{
+    "BASE_DATOS": "tdbsystem",
+    "SERVIDOR": "localhost",
+    "PUERTO": "5432",
+    "USUARIO": "postgres",
+    "CONTRASENA": "XXXXXXXX",
+    "CLAVE_RECAPTCHA": "6Le7-FkUAAAAADDSsTVBvpoUB5MkesNKgPVemFf-UD"
+}
