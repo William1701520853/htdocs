@@ -1,3 +1,6 @@
 <?php
-        echo "Hola mundo con AJAX";
+        if(isset($_POST))
+        {
+            echo $_POST['username'];
+        }
 ?>
