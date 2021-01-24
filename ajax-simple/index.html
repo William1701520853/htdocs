@@ -8,13 +8,23 @@
 </head>
 
 <body>
-    <button onclick="helloWorld()">
-    Hello World
+    <button onclick="sendRequest()">
+    Send AJAX request
     
 </button>
+    <h1 id="titulo"></h1>
     <script>
-        function helloWorld() {
-            console.log('Hola mundo')
+        function sendRequest() {
+            var theObject = new XMLHttpRequest();
+            theObject.open('GET', 'backend.php', true);
+            theObject.setRequestHeader('Content-Type', 'application/x-ww-form-urlencoded');
+
+            theObject.onreadystatechange = function() {
+                document.getElementById('titulo').innerHTML = theObject.responseText;
+
+                //console.log(theObject.responseText);
+            }
+            theObject.send();
         }
     </script>
 </body>
